@@ -33,10 +33,30 @@
     console.error('alerting daraa aldaa');
 
     console.log(variable_name);
-    // $variable_name;
-    var variable_name;
+
+    // $variable_name = 'variable holder';
+    var variable_name = 'variable holder';
 
     console.log(variable_name);
+
+    //Method = Function
+
+    function tooBod(variable){
+        // function happens here
+        console.log(variable, 'tooBod function yavj duuslaa');
+        return variable;
+    }
     </script>
+    <?php
+    function tooBod($variable){
+        // function happens here
+        return $variable;
+    }
+
+    function xoyorVariable($neg, $xoyor) {
+        return;
+    }
+    xoyorVariable(1,2);
+    ?>
 </body>
 </html>
