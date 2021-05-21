@@ -16,7 +16,7 @@
     <button type="button" class="btn btn-info">Info</button>
     <button type="button" class="btn btn-light">Light</button>
     <button type="button" class="btn btn-dark">Dark</button>
-    <?php print_r($user); die(); ?>
+    <?php //$user; print_r($user); die(); ?>
     <button type="button" class="btn btn-link">Link</button>
 
     <style>
@@ -29,6 +29,14 @@
     console.error('bi end aldaa gargaj baina');
 
     alert('Sanuulga');
+
+    console.error('alerting daraa aldaa');
+
+    console.log(variable_name);
+    // $variable_name;
+    var variable_name;
+
+    console.log(variable_name);
     </script>
 </body>
 </html>
