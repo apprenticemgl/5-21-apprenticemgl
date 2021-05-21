@@ -8,10 +8,10 @@
 
 </head>
 <body>
-    <button type="button" class="btn btn-primary">Primary</button>
-    <button type="button" class="btn btn-secondary">Secondary</button>
-    <button type="button" class="btn btn-success">Success</button>
-    <button type="button" class="btn btn-danger">Danger</button>
+    <button type="button" class="btn btn-primary" id="primary">Primary</button>
+    <button type="button" class="btn btn-secondary" id="primary">Secondary</button>
+    <button type="button" class="btn btn-success" id="success">Success</button>
+    <button type="button" class="btn btn-danger" id="danger">Danger</button>
     <button type="button" class="btn btn-warning">Warning</button>
     <button type="button" class="btn btn-info">Info</button>
     <button type="button" class="btn btn-light">Light</button>
@@ -25,28 +25,40 @@
 
     <script>
     /* javaSCRIPT ornoo */
-    console.log('bi end log bichig baina');
-    console.error('bi end aldaa gargaj baina');
+    // console.log('bi end log bichig baina');
+    // console.error('bi end aldaa gargaj baina');
 
-    alert('Sanuulga');
+    // alert('Sanuulga');
 
-    console.error('alerting daraa aldaa');
+    // console.error('alerting daraa aldaa');
 
-    console.log(variable_name);
+    // console.log(variable_name);
 
     // $variable_name = 'variable holder';
     var variable_name = 'variable holder';
 
-    console.log(variable_name);
+    // console.log(variable_name);
 
     //Method = Function
 
-    function tooBod(variable){
+    function tooBod(variable) {
         // function happens here
         console.log(variable, 'tooBod function yavj duuslaa');
         return variable;
     }
+
+    // tooBod('zov zov');
+    // tooBod(variable_name);
+
+
+    var successButton = document.getElementById('success');
+    console.log(successButton);
     </script>
+
+
+
+
+
     <?php
     function tooBod($variable){
         // function happens here
@@ -56,7 +68,7 @@
     function xoyorVariable($neg, $xoyor) {
         return;
     }
-    xoyorVariable(1,2);
+    xoyorVariable(1,2);    
     ?>
 </body>
 </html>
