@@ -51,8 +51,11 @@
     // tooBod(variable_name);
 
 
-    var successButton = document.getElementById('success');
+    var successButton = document.getElementById('primary');
     console.log(successButton);
+
+    var buxButtons = document.getElementsByClassName('btn');
+    tooBod(buxButtons);
     </script>
 
 
