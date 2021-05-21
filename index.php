@@ -16,7 +16,7 @@
     <button type="button" class="btn btn-info">Info</button>
     <button type="button" class="btn btn-light">Light</button>
     <button type="button" class="btn btn-dark">Dark</button>
-
+    <?php print_r($user); die(); ?>
     <button type="button" class="btn btn-link">Link</button>
 
     <style>
@@ -26,6 +26,9 @@
     <script>
     /* javaSCRIPT ornoo */
     console.log('bi end log bichig baina');
+    console.error('bi end aldaa gargaj baina');
+
+    alert('Sanuulga');
     </script>
 </body>
 </html>
