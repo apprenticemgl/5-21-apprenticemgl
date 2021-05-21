@@ -14,8 +14,8 @@
     <!-- <img/> -->
     <button type="button" class="btn btn-danger" id="danger" onclick="dangerDarsan()">Danger</button>
     <button type="button" class="btn btn-warning"
-    onclick="document.getElementById('the-child').innerHtml = 'Sanuulj baina shuu!'">Warning</button>
-    <button type="button" class="btn btn-info" onmouseover="document.getElementById('the-child').innerHtml = 'Info deer mouse irlee!'">Info</button>
+    onclick="eneIdtaiElementSoli('the-child')">Warning</button>
+    <button type="button" class="btn btn-info" onmouseover="document.getElementById('the-child').innerText = 'Info deer mouse irlee!'">Info</button>
     <button type="button" class="btn btn-light">Light</button>
     <button type="button" class="btn btn-dark">Dark</button>
     <?php //$user; print_r($user); die(); ?>
@@ -23,7 +23,10 @@
     <button type="button" class="btn btn-link">Link</button>
 
     <div class="with-child" id="with-child">
-        <p class="the-child" id="the-child">I'm the child</p>
+        <p class="the-child" id="the-child">
+            I'm the child
+            <span>ene span baina</span>
+        </p>
     </div>
     <style>
     /* css ornoo = cascading STYLE sheet*/
@@ -44,6 +47,12 @@
     var variable_name = 'variable holder';
 
     // console.log(variable_name);
+
+    function eneIdtaiElementSoli(elementId) {
+        var el = document.getElementById(elementId);
+        el.innerText = 'xooson';
+        console.log(el);
+    }
 
     //Method = Function
 
