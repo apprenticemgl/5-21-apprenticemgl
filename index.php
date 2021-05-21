@@ -52,6 +52,7 @@
 
     // console.log(variable_name);
 
+    /* end yu bolj bainaa gedegiig tailbalraarai!! */
     function eneIdtaiElementSoli(elementId) {
         var el = document.getElementById(elementId);
         el.innerText = 'xooson';
