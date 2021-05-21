@@ -12,11 +12,10 @@
     <button type="button" class="btn btn-secondary" id="primary">Secondary</button>
     <input type="button" class="btn btn-success" id="success" value="Success"/>
     <!-- <img/> -->
-    <button type="button" class="btn btn-danger" id="danger"
-    onclick="dangerDarsan()"
-    >Danger</button>
-    <button type="button" class="btn btn-warning">Warning</button>
-    <button type="button" class="btn btn-info">Info</button>
+    <button type="button" class="btn btn-danger" id="danger" onclick="dangerDarsan()">Danger</button>
+    <button type="button" class="btn btn-warning"
+    onclick="document.getElementById('the-child').innerHtml = 'Sanuulj baina shuu!'">Warning</button>
+    <button type="button" class="btn btn-info" onmouseover="document.getElementById('the-child').innerHtml = 'Info deer mouse irlee!'">Info</button>
     <button type="button" class="btn btn-light">Light</button>
     <button type="button" class="btn btn-dark">Dark</button>
     <?php //$user; print_r($user); die(); ?>
@@ -57,14 +56,6 @@
     // tooBod('zov zov');
     // tooBod(variable_name);
 
-
-    var successButton = document.getElementById('success');
-    console.log(successButton);
-    // alert('succes soligdloo shuu');
-    successButton.innerHTML = 'Hi';
-    successButton.setAttribute('value', 'HI hi');
-    successButton.setAttribute('type', 'text');
-
     var buxButtons = document.getElementsByClassName('btn');
     tooBod(buxButtons);
 
@@ -72,7 +63,12 @@
 
 
     function dangerDarsan() {
-        
+        var successButton = document.getElementById('success');
+        console.log(successButton);
+        // alert('succes soligdloo shuu');
+        successButton.innerHTML = 'Hi';
+        successButton.setAttribute('value', 'HI hi');
+        successButton.setAttribute('type', 'text');
     }
 
     </script>
