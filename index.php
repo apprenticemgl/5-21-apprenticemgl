@@ -8,16 +8,18 @@
 
 </head>
 <body>
-    <button type="button" class="btn btn-primary" id="primary">Primary</button>
-    <button type="button" class="btn btn-secondary" id="primary">Secondary</button>
-    <input type="button" class="btn btn-success" id="success" value="Success"/>
-    <!-- <img/> -->
-    <button type="button" class="btn btn-danger" id="danger" onclick="dangerDarsan()">Danger</button>
-    <button type="button" class="btn btn-warning"
-    onclick="eneIdtaiElementSoli('the-child')">Warning</button>
-    <button type="button" class="btn btn-info" onmouseover="document.getElementById('the-child').innerText = 'Info deer mouse irlee!'">Info</button>
-    <button type="button" class="btn btn-light">Light</button>
-    <button type="button" class="btn btn-dark">Dark</button>
+    <form onsubmit="submittingForm()" action="/" method="GET">
+        <button type="button" class="btn btn-primary" id="primary">Primary</button>
+        <button type="button" class="btn btn-secondary" id="primary">Secondary</button>
+        <input type="button" name="test" class="btn btn-success" id="success" value="Success"/>
+        <!-- <img/> -->
+        <button type="button" class="btn btn-danger" id="danger" onclick="dangerDarsan()">Danger</button>
+        <button type="button" class="btn btn-warning"
+        onclick="eneIdtaiElementSoli('the-child')">Warning</button>
+        <button type="button" class="btn btn-info" onmouseover="document.getElementById('the-child').innerText = 'Info deer mouse irlee!'">Info</button>
+        <button type="button" class="btn btn-light">Light</button>
+        <button type="submit" class="btn btn-dark">Dark</button>
+    </form>
     <?php //$user; print_r($user); die(); ?>
 
     <button type="button" class="btn btn-link">Link</button>
@@ -42,7 +44,9 @@
     // console.error('alerting daraa aldaa');
 
     // console.log(variable_name);
-
+    function submittingForm() {
+        console.log('form submitting');
+    }
     // $variable_name = 'variable holder';
     var variable_name = 'variable holder';
 
